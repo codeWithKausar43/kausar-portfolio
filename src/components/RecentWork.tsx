@@ -50,7 +50,7 @@ const RecentWork = () => {
             name: "Nothing Studio",
             description: "Nothing Studio is a responsive portfolio website using React and GSAP, featuring seamless animations and an engaging user experience.",
             technologies: ["UI", "GSAP", "React", "Tailwind"],
-            liveLink: "https://nothing-studio.vercel.app/",
+            liveLink: "https://noting-gilt.vercel.app/",
             clientCode: "https://github.com/codeWithKausar43/noting",
             isVideo: true,
             image: nothingStudio
@@ -59,7 +59,7 @@ const RecentWork = () => {
             name: "Residential",
             description: "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
             technologies: ["React", "React Router", "Firebase", "Tailwind","UI"],
-            liveLink: "https://residentialrealestate.vercel.app/",
+            liveLink: "https://residential-site.vercel.app/",
             clientCode: "https://github.com/codeWithKausar43/residential-real-estate",
             image: residential
         },
@@ -68,7 +68,7 @@ const RecentWork = () => {
             name: "Nest Mart BD",
             description: "User-friendly online store offering various products to enhance daily life and convenience",
             technologies: ["UI", "Framer Motion", "Tailwind"],
-            liveLink: "https://nestmartbd.vercel.app/",
+            liveLink: "https://nest-mart-bd.vercel.app/",
             clientCode: "https://github.com/codeWithKausar43/nest-mart-bd",
             image: nest
         },  
@@ -76,7 +76,7 @@ const RecentWork = () => {
             name: "Bike Shop",
             description: "A Bike Shop Landing Page Design Template ( Full Responsive )",
             technologies: ["UI", "Tailwind", "HTML"],
-            liveLink: "https://bike-shop43.netlify.app/",
+            liveLink: "https://bike-shop-ashen.vercel.app/",
             clientCode: "https://github.com/codeWithKausar43/bike-shop",
             image: bikeShop
         },
