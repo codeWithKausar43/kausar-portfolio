@@ -17,33 +17,11 @@ function App() {
     // Simulate loading for 2 seconds
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 300);
     return () => clearTimeout(timer);
   }, []);
 
-  // useEffect(() => {
-  //   // Check if the prompt has already been shown in this session
-  //   const hasPromptBeenShown = sessionStorage.getItem("installPromptShown");
-  //   if (!hasPromptBeenShown && !isLoading && deferredPrompt) {
-  //     setModalVisible(true);
-  //   }
-  // }, [isLoading, deferredPrompt]);
-
-  // useEffect(() => {
-  //   const handleBeforeInstallPrompt = (e: BeforeInstallPromptEvent) => {
-  //     // Prevent the mini-infobar from appearing on mobile
-  //     e.preventDefault();
-  //     // Stash the event so it can be triggered later
-  //     setDeferredPrompt(e);
-  //   };
-
-  //   // Listen for the beforeinstallprompt event
-  //   window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt as EventListener);
-
-  //   return () => {
-  //     window.removeEventListener("beforeinstallprompt", handleBeforeInstallPrompt as EventListener);
-  //   };
-  // }, []);
+ 
 
   const handleInstallClick = () => {
     if (deferredPrompt) {

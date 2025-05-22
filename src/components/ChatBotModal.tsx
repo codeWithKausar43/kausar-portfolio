@@ -84,7 +84,7 @@ const ChatBotModal = ({ isOpen, setIsOpen }:any) => {
                     >
                         {/* Chat Header */}
                         <div className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-3 flex justify-between items-center">
-                            <span className="font-semibold">AhadulAssist 🤖</span>
+                            <span className="font-semibold">KausarAssist 🤖</span>
                             <button
                                 onClick={() => setIsOpen(false)}
                                 className="text-white hover:text-gray-200 transition-colors cursor-pointer"

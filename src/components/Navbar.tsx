@@ -50,7 +50,7 @@ const Navbar = () => {
             <span className="absolute left-0 -bottom-[6px] w-0 h-[2px] bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-300"></span>
           </a>
         ))}
-        <a href="https://drive.google.com/file/d/1HG5FliUEjKXxs7y3m7CdgduE1V7jJ9O3/view?usp=sharing" target="_blank" className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary font-bold cursor-pointer transition-all duration-1000 ease-in-out hover:bg-gradient-to-r hover:from-secondary hover:to-primary">
+        <a href="https://drive.google.com/file/d/1SvIzsSFR09fdMABMh3dGmbyAWKjfxDDK/view?usp=sharing" target="_blank" className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary font-bold cursor-pointer transition-all duration-1000 ease-in-out hover:bg-gradient-to-r hover:from-secondary hover:to-primary">
           Hire Me
         </a>
       </div>

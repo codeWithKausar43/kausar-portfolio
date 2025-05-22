@@ -86,7 +86,7 @@ const Blogs = () => {
                                     <span className="px-3 py-1 bg-primary/20 text-primary text-sm rounded-full">
                                         {blog.category}
                                     </span>
-                                    <a href={blog.link} target='_blank' className="flex items-center text-white hover:text-primary transition-colors">
+                                    <a href="#" target='_blank' className="flex items-center text-white hover:text-primary transition-colors">
                                         Read More
                                         <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />

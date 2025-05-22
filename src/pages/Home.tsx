@@ -10,6 +10,8 @@ import Contact from "../components/Contact";
 import Blogs from "../components/Blogs";
 import Footer from "../components/Footer";
 import ChatBot from "../components/ChatBot";
+ 
+ 
 const Home = ({ isOpen, setIsOpen }:any) => {
     const [scrolling, setScrolling] = useState(false);
     const [navHeight, setNavHeight] = useState(0);
