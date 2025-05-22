@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
-import vacayVibes from '../assets/vacay-vibes.web.app_ (2).png';
-import calorieCrafter from '../assets/calorie-crafter.png';
-import byteBlaze from '../assets/Byteblaze.png';
-import hirevision from '../assets/hirevision.png';
 import bikeShop from '../assets/bikeshop.png';
 import nothingStudio from '../assets/nothing studio.mp4';
 import service from '../assets/service.png';
 import hostel from '../assets/hostel-management.png';
 import movie from '../assets/movie.png';
+import nest from '../assets/nestmartbd.png';
+import residential from "../assets/residentialrealestat.png"
 interface Project {
     name: string;
     description: string;
@@ -58,43 +56,28 @@ const RecentWork = () => {
             image: nothingStudio
         },
         {
-            name: "Hire Vision",
-            description: "HireVision is a fully responsive landing page with smooth animations, delivering an engaging and user-friendly experience",
+            name: "Residential",
+            description: "Real estate platform to discover, list, and explore apartments, townhouses, and vacation rentals.",
+            technologies: ["React", "React Router", "Firebase", "Tailwind","UI"],
+            liveLink: "https://residentialrealestate.vercel.app/",
+            clientCode: "https://github.com/codeWithKausar43/residential-real-estate",
+            image: residential
+        },
+        
+        {
+            name: "Nest Mart BD",
+            description: "User-friendly online store offering various products to enhance daily life and convenience",
             technologies: ["UI", "Framer Motion", "Tailwind"],
-            liveLink: "https://jovial-cuchufli-ac15e0.netlify.app/",
-            clientCode: "https://github.com/itsahadul99/HireVision.git",
-            image: hirevision
-        },
-        {
-            name: "Vacay Vibes",
-            description: "A real estate website with property listings, profile management, and social media login.",
-            technologies: ["React", "React Router", "Firebase", "Tailwind"],
-            liveLink: "https://vacay-vibes.web.app/",
-            clientCode: "https://github.com/itsahadul99/vacay-vibes",
-            image: vacayVibes
-        },
-        {
-            name: "Calorie Crafter",
-            description: "A site to track cooking recipes, calories, and cooking time.",
-            technologies: ["JavaScript", "DOM", "API", "Tailwind"],
-            liveLink: "https://65f5d147fbe72cd6f352f2e8--stalwart-blancmange-bdc868.netlify.app/",
-            clientCode: "https://github.com/itsahadul99/calorie-crafter",
-            image: calorieCrafter
-        },
-        {
-            name: "Byte Blaze",
-            description: "A dynamic blogging platform with responsive design and bookmarking features.",
-            technologies: ["React", "React Router", "API", "Tailwind"],
-            liveLink: "https://bytbleze.netlify.app/",
-            clientCode: "https://github.com/itsahadul99/byteblaze",
-            image: byteBlaze
-        },
+            liveLink: "https://nestmartbd.vercel.app/",
+            clientCode: "https://github.com/codeWithKausar43/nest-mart-bd",
+            image: nest
+        },  
         {
             name: "Bike Shop",
             description: "A Bike Shop Landing Page Design Template ( Full Responsive )",
             technologies: ["UI", "Tailwind", "HTML"],
             liveLink: "https://bike-shop43.netlify.app/",
-            clientCode: "https://github.com/itsahadul99/bike-shop.git",
+            clientCode: "https://github.com/codeWithKausar43/bike-shop",
             image: bikeShop
         },
     ];
