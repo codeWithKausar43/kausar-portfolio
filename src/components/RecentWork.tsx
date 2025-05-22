@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import contestCorner from '../assets/contest-corner.png';
-import reserveNest from '../assets/reserve-nest.web.app_ (2).png';
 import vacayVibes from '../assets/vacay-vibes.web.app_ (2).png';
 import calorieCrafter from '../assets/calorie-crafter.png';
 import byteBlaze from '../assets/Byteblaze.png';
 import hirevision from '../assets/hirevision.png';
 import bikeShop from '../assets/bikeshop.png';
 import nothingStudio from '../assets/nothing studio.mp4';
-
+import service from '../assets/service.png';
+import hostel from '../assets/hostel-management.png';
+import movie from '../assets/movie.png';
 interface Project {
     name: string;
     description: string;
@@ -21,29 +21,39 @@ interface Project {
 const RecentWork = () => {
     const projects = [
         {
-            name: "Contest Corner",
-            description: "A platform for participating in contests, showcasing skills, and winning rewards.",
-            technologies: ["React", "Express", "MongoDB", "Tanstack", "Tailwind"],
-            liveLink: "https://contest-corner.web.app/",
-            clientCode: "https://github.com/itsahadul99/contest-corner-client",
-            serverCode: "https://github.com/itsahadul99/contest-corner-server",
-            image: contestCorner
+            name: "Hostel Management",
+            description: "A system to manage hostel operations like student info, meals, and reviews efficiently.",
+            technologies: ["React", "Express", "MongoDB", "Firebase", "Tailwind"],
+            liveLink: "https://hostel-management-4286f.web.app/",
+            clientCode: "https://github.com/codeWithKausar43/Hostel-Management-Client",
+            serverCode: "https://github.com/codeWithKausar43/Hostel-Management-Server",
+            image: hostel
         },
         {
-            name: "Reserve Nest",
-            description: "A hotel room booking website with secure booking and review management.",
-            technologies: ["React", "Express", "MongoDB", "Firebase", "Tailwind"],
-            liveLink: "https://vacay-vibes.web.app/",
-            clientCode: "https://github.com/itsahadul99/reserve-nest-client",
-            serverCode: "https://github.com/itsahadul99/reserve-nest-server",
-            image: reserveNest
+            name: "Service Review",
+            description: "A platform for users to post and read honest service reviews, helping others make informed choices.",
+            technologies: ["React", "Express", "MongoDB", "Tanstack", "Tailwind"],
+            liveLink: "https://assignment-11-new-2c7ac.web.app/",
+            clientCode: "https://github.com/codeWithKausar43/Service-Review-Client",
+            serverCode: "https://github.com/codeWithKausar43/Service-Review-Server",
+            image: service
         },
+         {
+            name: "Movie Portal",
+            description: "A platform for users to post and read honest service reviews, helping others make informed choices.",
+            technologies: ["React", "Express", "MongoDB", "Tanstack", "Tailwind"],
+            liveLink: "https://movie-portal-3fbfe.web.app/",
+            clientCode: "https://github.com/codeWithKausar43/Movie-Portal-Client",
+            serverCode: "https://github.com/codeWithKausar43/Movie-Portal-Server",
+            image: movie
+        },
+        
         {
             name: "Nothing Studio",
             description: "Nothing Studio is a responsive portfolio website using React and GSAP, featuring seamless animations and an engaging user experience.",
             technologies: ["UI", "GSAP", "React", "Tailwind"],
             liveLink: "https://nothing-studio.vercel.app/",
-            clientCode: "https://github.com/itsahadul99/nothing-studio.git",
+            clientCode: "https://github.com/codeWithKausar43/noting",
             isVideo: true,
             image: nothingStudio
         },
@@ -132,16 +142,16 @@ const RecentWork = () => {
                             All
                         </button>
                         <button
-                            onClick={() => handleFilterClick('React')}
-                            className={`px-6 py-2 rounded-full ${filter === 'React' ? 'bg-gradient-to-r from-primary to-secondary text-white' : 'bg-gray-800 text-gray-400'}`}
-                        >
-                            FrontEnd
-                        </button>
-                        <button
                             onClick={() => handleFilterClick('MongoDB')}
                             className={`px-6 py-2 rounded-full ${filter === 'MongoDB' ? 'bg-gradient-to-r from-primary to-secondary text-white' : 'bg-gray-800 text-gray-400'}`}
                         >
                             MERN
+                        </button>
+                         <button
+                            onClick={() => handleFilterClick('UI')}
+                            className={`px-6 py-2 rounded-full ${filter === 'UI' ? 'bg-gradient-to-r from-primary to-secondary text-white' : 'bg-gray-800 text-gray-400'}`}
+                        >
+                            FrontEnd
                         </button>
                         <button
                             onClick={() => handleFilterClick('Express')}
@@ -149,12 +159,7 @@ const RecentWork = () => {
                         >
                             BackEnd
                         </button>
-                        <button
-                            onClick={() => handleFilterClick('UI')}
-                            className={`px-6 py-2 rounded-full ${filter === 'UI' ? 'bg-gradient-to-r from-primary to-secondary text-white' : 'bg-gray-800 text-gray-400'}`}
-                        >
-                            UI
-                        </button>
+                       
                     </div>
 
                     {/* Loading State */}
@@ -174,7 +179,7 @@ const RecentWork = () => {
                                                 <video loop src={project.image} autoPlay={true}></video>
                                             </div> : <div className="w-full image-container overflow-hidden mb-4">
                                                 <img
-                                                    className="rounded-md mb-4 object-cover w-full h-full"
+                                                    className="rounded-md mb-4 w-full h-full"
                                                     src={project.image}
                                                     alt={project.name}
                                                 />

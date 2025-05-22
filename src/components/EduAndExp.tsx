@@ -1,6 +1,5 @@
 import { FaGraduationCap } from "react-icons/fa6";
-import { GiAchievement } from "react-icons/gi";
-
+ 
 const EduAndExp = () => {
     return (
         <div id='Resume' className="relative py-10 md:py-20 overflow-hidden">
@@ -11,34 +10,15 @@ const EduAndExp = () => {
             </div>
             <div className="max-w-7xl mx-auto px-5">
                 <div className="flex flex-col md:flex-row items-start justify-between w-full text-3xl md:text-4xl lg:text-5xl mb-16 gap-10 md:gap-20">
-                    <div className="flex-1 space-y-5 md:space-y-8 w-full z-20">
-                        <div className="flex justify-start h-full items-center gap-3 md:gap-5 flex-1">
-                            <GiAchievement className="text-primary" />
-                            <h1 className="text-transparent bg-gradient-to-r from-primary to-[#ddcdfdc7] bg-clip-text font-bold animate-fade-in">
-                                My Experience
-                            </h1>
-                        </div>
-                        <div className="group p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
-                            <h4 className="text-lg md:text-xl font-semibold text-primary group-hover:text-white">
-                                2024 - Present
-                            </h4>
-                            <h1 className="text-2xl md:text-4xl font-bold text-white">
-                                Full Stack Developer
-                            </h1>
-                            <p className="text-xs md:text-sm font-medium text-white">
-                                IBOS Limited, Bangladesh
-                            </p>
-                        </div>
-
-                    </div>
-                    <div className="flex-1 space-y-5 md:space-y-8 w-full z-20">
+                    <div className=" space-y-5 md:space-y-8 w-full z-20">
                         <div className="flex items-center gap-3 md:gap-5">
                             <FaGraduationCap className="text-primary" />
                             <h1 className="text-transparent bg-gradient-to-r from-primary to-[#ddcdfdc7] bg-clip-text font-bold animate-fade-in">
                                 My Education
                             </h1>
                         </div>
-                        <div className="group p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
+                        <div className="md:flex justify-center gap-6">
+                            <div className="group p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
                             <h4 className="text-lg md:text-xl font-semibold text-primary group-hover:text-white">
                                 2022 - Present
                             </h4>
@@ -49,9 +29,9 @@ const EduAndExp = () => {
                                 Mymensingh Polytechnic Institute, Bangladesh
                             </p>
                         </div>
-                        <div className="group p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
+                        <div className="group mt-6 md:mt-0 p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
                             <h4 className="text-lg md:text-xl font-semibold text-primary group-hover:text-white">
-                                2023 - 2024
+                                2024 - 2025
                             </h4>
                             <h1 className="text-2xl md:text-4xl font-bold text-white">
                                 Web Development Course
@@ -59,6 +39,7 @@ const EduAndExp = () => {
                             <p className="text-xs md:text-sm font-medium text-white">
                                 Programming Hero
                             </p>
+                        </div>
                         </div>
                     </div>
                 </div>
