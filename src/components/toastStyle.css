@@ -1,0 +1,4 @@
+.custom-toast {
+  background-color: hsl(276, 93%, 46%) !important; /* Tailwind এর slate-800 color */
+  color: white !important;
+}

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import { toast } from "sonner";
+import "./toastStyle.css"
 const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -17,28 +18,42 @@ const Contact = () => {
     setFormData((prevData) => ({ ...prevData, [id]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+    const handleSubmit = (e: React.FormEvent) => {
+      e.preventDefault();
 
-    const data = {
-      user_name: `${formData.firstName} ${formData.lastName}`,
-      user_email: formData.email,
-      user_phone: formData.phone,
-      user_message: formData.message,
-    };
-    // 1. Admin email
-    emailjs
-      .send("service_fpvkbxj", "template_c87sj8c", data, "PQ_R1_73Azaz_f9La")
-      .then(() => {
-         toast.success("Message Sent Successfully! Please check your email for a thank you note.");
+      const data = {
+        user_name: `${formData.firstName} ${formData.lastName}`,
+        user_email: formData.email,
+        user_phone: formData.phone,
+        user_message: formData.message,
+      };
+      // 1. Admin email
+      emailjs
+        .send("service_fpvkbxj", "template_c87sj8c", data, "PQ_R1_73Azaz_f9La")
+        .then(() => {
+          toast.success(
+            "Message Sent Successfully! Please check your email. thank you",
+            {
+              className: "custom-toast",
+            }
+          );
+        setFormData({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
       })
-      .catch((err) => console.error("❌ Admin email failed:", err));
+      .catch(() => {
+        toast.error(
+          "Something went wrong! Message not sent.",
+          {
+            className: "custom-toast",
+          }
+        );
+      });
 
-    // 2. User thank you email
-    emailjs
-      .send("service_fpvkbxj", "template_c87sj8c", data, "PQ_R1_73Azaz_f9La")
-      .then(() => console.log("Thank you email sent to user"))
-      .catch((err) => console.error(" User email failed:", err));
   };
 
   return (
