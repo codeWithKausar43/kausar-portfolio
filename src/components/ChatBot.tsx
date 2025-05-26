@@ -7,7 +7,7 @@ const ChatBot = ({ isOpen, setIsOpen }: any) => {
             {/* Chat Toggle Button */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="bg-gradient-to-r from-primary to-secondary font-bold cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 p-3 text-white rounded-full shadow-lg flex items-center justify-center gap-2"
+                className="bg-gradient-to-r from-primary to-secondary font-bold cursor-pointer transition-all duration-300 ease-in-out hover:scale-105 py-2 px-4 text-white rounded-full shadow-lg flex items-center justify-center gap-2"
             >
                 {isOpen ? (
                     <>

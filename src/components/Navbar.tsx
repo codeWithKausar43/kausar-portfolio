@@ -97,7 +97,7 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="https://drive.google.com/file/d/1HG5FliUEjKXxs7y3m7CdgduE1V7jJ9O3/view?usp=sharing"
+            href="https://drive.google.com/file/d/1SvIzsSFR09fdMABMh3dGmbyAWKjfxDDK/view?usp=sharing"
             target="_blank"
             className="px-4 md:px-8 py-2 md:py-4 text-sm md:text-xl rounded-full bg-gradient-to-r from-primary to-secondary font-bold cursor-pointer transition-all duration-1000 ease-in-out hover:bg-gradient-to-r hover:from-secondary hover:to-primary"
           >
