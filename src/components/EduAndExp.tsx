@@ -17,8 +17,8 @@ const EduAndExp = () => {
                 My Education
               </h1>
             </div>
-            <div className="grid md:grid-cols-2 justify-center gap-6">
-              <div className="group p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="group p-5 border rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
                 <h4 className="text-lg md:text-xl font-semibold text-primary group-hover:text-white">
                   2022 - Present
                 </h4>
@@ -29,7 +29,7 @@ const EduAndExp = () => {
                   Mymensingh Polytechnic Institute, Bangladesh
                 </p>
               </div>
-              <div className="group mt-6 md:mt-0 p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
+              <div className="group mt-6 border md:mt-0 p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
                 <div className="flex justify-between">
                   <h4 className="text-lg md:text-xl font-semibold text-primary group-hover:text-white">
                     2024 - 2025
@@ -52,7 +52,7 @@ const EduAndExp = () => {
                   Programming Hero
                 </p>
               </div>
-              <div className="group mt-6 md:mt-0 p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
+              <div className="group mt-6 border md:mt-0 p-5 rounded-2xl bg-[#21102eea] space-y-3 ease-in-out transition-all duration-1000 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white w-full">
                 <div className="flex justify-between">
                   <h4 className="text-lg md:text-xl font-semibold text-primary group-hover:text-white">
                     2025 - 2026
