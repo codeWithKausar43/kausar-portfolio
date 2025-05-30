@@ -69,7 +69,7 @@ function createAmazingProjects() {
                     </p>
                     <div className="flex items-center gap-3 md:gap-5">
                         <a
-                            href="https://drive.google.com/file/d/1tqCRd1hV2tmxJKLtFb0iAWskYltMMJT3/view?usp=sharing"
+                            href="https://drive.google.com/file/d/10YM9F7WdBQz5306LAHp1pDQRKK0vdVVl/view?usp=sharing"
                             target="_blank"
                             className="text-xs md:text-lg flex justify-between gap-2 items-center px-2 md:px-4 py-2 md:py-3 rounded-full border hover:text-white hover:bg-primary ease-in-out duration-500 border-primary text-primary font-medium cursor-pointer"
                             rel="noopener noreferrer"
